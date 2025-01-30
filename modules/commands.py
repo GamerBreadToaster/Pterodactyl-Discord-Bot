@@ -1,7 +1,5 @@
 import discord
-from discord import webhook
 import time
-import aiohttp
 from pydactyl import PterodactylClient
 from modules.pte_manager import get_server_ids, get_server_info, wait_until_update
 
