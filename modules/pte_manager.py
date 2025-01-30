@@ -1,6 +1,5 @@
 from pydactyl import PterodactylClient
 import time
-import threading
 
 
 def ctime():
