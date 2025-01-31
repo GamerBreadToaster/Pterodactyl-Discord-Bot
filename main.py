@@ -1,4 +1,4 @@
-from modules.pte_manager import get_server_ids, get_server_info, wait_until_update
+from modules.pte_manager import get_server_ids, get_server_info
 from modules.database_manager import set_data, check_data, get_data
 from modules.commands import status, power_options
 from pydactyl import PterodactylClient
