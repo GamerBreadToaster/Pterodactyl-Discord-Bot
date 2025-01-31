@@ -1,6 +1,7 @@
 # Pte Panel Discord Bot #
 
 this is a little discord bot I made that interacts with your pydactyl panel via discord!
+You are probably better off just using your pte panel and giving your friends or mods or whatever access.
 
 ## things to do: ##
 * Add a permissions system (maybe with discord roles) so not everyone can do everything (only administrators can change the api tho).
