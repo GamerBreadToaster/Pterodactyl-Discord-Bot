@@ -2,7 +2,12 @@
 
 this is a little discord bot i made that interacts with your pydactyl panel via discord!
 
-Python packages needed:
+## things to do: ##
+* Add a permissions system (maybe with discord roles) so not everyone can do everything (only administrators can change the api tho).
+* Add more admin settings like making a server.
+* Learn how to do webhook and websocket things so you can see console because you can't at the moment. (I do not know how these work)
+
+## Python packages needed: ##
 * py-cord
 * py-dactyl
 * adiooop-lts (only if python version is 3.13)
