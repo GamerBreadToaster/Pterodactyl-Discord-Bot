@@ -42,11 +42,10 @@ def main():
     @bot.slash_command()
     @discord.default_permissions(administrator=True,)
     async def testkey(ctx: discord.ApplicationContext):
-        response = ""
         try:
             api = PterodactylClient(get_data("servers", ctx.guild_id, "url"),
                                     get_data("servers", ctx.guild_id, "api_key"))
-            permissions = api.client.account.get_account()
+            permissions = api.client.account.get_account() # this responds with an admin and root admin.
             await ctx.respond(f"Api holder is\nadmin: {permissions['attributes']['admin']}\nroot admin: {permissions['attributes']['root_admin']}")
         except Exception as err:
             await ctx.respond(f"there is an error, probably api key not working: {err}")
