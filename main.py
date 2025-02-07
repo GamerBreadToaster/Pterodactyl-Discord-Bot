@@ -12,7 +12,7 @@ def main():
 
     # for logging
     def ctime():
-        return f"{time.strftime("%d-%m-%y | %H:%M:%S: ")}"
+        return f"{time.strftime('%d-%m-%y | %H:%M:%S: ')}"
 
     # checks
     @bot.event

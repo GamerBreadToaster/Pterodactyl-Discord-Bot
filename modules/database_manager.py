@@ -3,7 +3,7 @@ import os
 import time
 
 def ctime():
-    return f"{time.strftime("%d-%m-%y | %H:%M:%S: ")}"
+    return f"{time.strftime('%d-%m-%y | %H:%M:%S: ')}"
 
 
 def get_db_connection():

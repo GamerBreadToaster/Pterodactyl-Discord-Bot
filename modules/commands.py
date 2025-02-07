@@ -5,7 +5,7 @@ from modules.pte_manager import get_server_ids, get_server_info, wait_until_upda
 
 
 def ctime():
-    return f"{time.strftime("%d-%m-%y | %H:%M:%S: ")}"
+    return f"{time.strftime('%d-%m-%y | %H:%M:%S: ')}"
 
 def get_info_with_name(name: str, api: PterodactylClient):
     # To search for the server with the same name as given
