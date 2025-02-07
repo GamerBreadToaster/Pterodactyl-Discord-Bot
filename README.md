@@ -21,7 +21,7 @@ It also lacks features for the admin side, for example adding a server. This is 
 ## how to install: (todo)
 * Bot invite link: (not yet)
 * Hosting yourself can be done by getting a bot token from discord.com/developers and putting it down in main file after downloading the latest version.
-* more detailed install guide will be added soon
+* more detailed installation guide will be added soon
 
 ## Python packages needed:
 * `py-cord`
