@@ -26,4 +26,7 @@ It also lacks features for the admin side, for example adding a server. This is 
 ## Python packages needed:
 * `py-cord`
 * `py-dactyl`
-* `adiooop-lts` (only if python version is 3.13)
+* `adioop-lts` (only if python version is 3.13)
+```commandline
+py -m pip install py-cord py-dactyl audioop-lts
+```
