@@ -29,6 +29,8 @@ def main():
         print(f"{ctime()}logged in as {bot.user}, total guild count: {len(bot.guilds)}, all guilds i am in:")
         for servers in bot.guilds:
             print(servers)
+
+        check_data(0) # This will check if there is an database even present in the files
     @bot.event
     async def on_guild_join(guild: discord.guild):
         check_data(guild.id) # to make a database entry if server has none

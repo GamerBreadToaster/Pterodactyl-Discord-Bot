@@ -10,6 +10,10 @@ def get_db_connection():
     # get the data map
     root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     db_path = os.path.join(root_path, "data", "data.db")
+    if not os.path.exists(db_path):
+        os.mkdir("data")
+        with open(db_path, "w") as file:
+            pass
     conn = sqlite3.connect(db_path)
     return conn
 
@@ -67,6 +71,7 @@ def check_data(server_id: int):
 
     # data checker
     conn = get_db_connection()
+    create_table()
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM servers WHERE server_id = ?', (server_id,))
     all_collums = cursor.fetchall()
@@ -93,6 +98,7 @@ def get_data(table: str, primary_key: int, data_type: str):
     data_type = data_type.lower()
 
     # get all table args or something idk how to call it and check if data_type == collums
+    # yeah no shit sherlock
     cursor.execute(f'PRAGMA table_info({table})')
     all_collums = cursor.fetchall()
     valid_data_types = []
