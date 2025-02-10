@@ -5,6 +5,7 @@ from pydactyl import PterodactylClient
 import discord
 from discord import option
 import time
+import os
 
 def main():
     intents = discord.Intents.all()
@@ -13,6 +14,14 @@ def main():
     # for logging
     def ctime():
         return f"{time.strftime('%d-%m-%y | %H:%M:%S: ')}"
+
+    def get_token():
+        # get the token so I can safely test
+        root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        token_path = os.path.join(root_path, "token.txt")
+        with open(token_path, "r") as file:
+            token = file.readlines()
+        return token
 
     # checks
     @bot.event
@@ -101,7 +110,7 @@ def main():
         except Exception as err:
             await ctx.respond(f"Something went wrong: {err}")
 
-    bot.run("DISCORD_BOT_TOKEN")
+    bot.run(get_token())
 
 
 if __name__ == "__main__":
