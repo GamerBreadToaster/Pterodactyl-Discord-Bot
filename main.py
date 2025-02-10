@@ -21,7 +21,7 @@ def main():
         token_path = os.path.join(root_path, "token.txt")
         with open(token_path, "r") as file:
             token = file.readlines()
-        return token
+        return token[0]
 
     # checks
     @bot.event
