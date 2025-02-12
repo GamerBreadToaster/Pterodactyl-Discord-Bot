@@ -30,3 +30,6 @@ It also lacks features for the admin side, for example adding a server. This is 
 ```commandline
 py -m pip install py-cord py-dactyl audioop-lts
 ```
+```commandline
+python3 -m pip install py-cord py-dactyl audioop-lts
+```
