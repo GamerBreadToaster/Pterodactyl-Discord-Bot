@@ -1,1 +1,3 @@
-py-cord py-dactyl adioop-lts
+py-cord
+py-dactyl
+adioop-lts
